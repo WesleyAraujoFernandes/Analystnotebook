@@ -14,7 +14,7 @@ public enum Condition {
     EXPRESSAO_REGULAR("Expressão regular"),
     INICIA_COM("Inicia com");
 
-    private String description;;
+    private String description;
 
     Condition(String description) {
         this.description = description;
