@@ -1,5 +1,7 @@
 package br.com.viaapia.analystnotebook.model.action;
 
-public class CompactarCaracterRepetido {
+import br.com.viaapia.analystnotebook.model.Action;
+
+public class CompactarCaracterRepetido extends Action {
     // CONDIÇÃO -> VALOR
 }

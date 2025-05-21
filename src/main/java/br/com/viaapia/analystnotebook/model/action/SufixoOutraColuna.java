@@ -1,9 +1,12 @@
 package br.com.viaapia.analystnotebook.model.action;
 
+import br.com.viaapia.analystnotebook.model.Action;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
-public class SufixoOutraColuna {
+@EqualsAndHashCode(callSuper = false)
+public class SufixoOutraColuna extends Action {
     public enum SEPARADOR {
         NENHUM("Nenhum"),
         ESPACO("Espaço"),

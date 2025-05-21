@@ -1,10 +1,11 @@
 package br.com.viaapia.analystnotebook.model.action;
 
+import br.com.viaapia.analystnotebook.model.Action;
 import br.com.viaapia.analystnotebook.model.Condition;
 
 // Altera o uso de letras maiúsculas e minúsculas
 // Exemplo: "A" -> "a", "a" -> "A"
-public class AlterarUsoMaiusculaMinuscula {
+public class AlterarUsoMaiusculaMinuscula extends Action {
     public enum Type {
         MINUSCULA("MINUSCULA"),
         MAIUSCULA("MAIUSCULA"),

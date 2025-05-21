@@ -1,8 +1,11 @@
 package br.com.viaapia.analystnotebook.model.action;
 
+import br.com.viaapia.analystnotebook.model.Action;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
-public class IncluirSufixo {
+@EqualsAndHashCode(callSuper = false)
+public class IncluirSufixo extends Action {
     private String sufixo;
 }

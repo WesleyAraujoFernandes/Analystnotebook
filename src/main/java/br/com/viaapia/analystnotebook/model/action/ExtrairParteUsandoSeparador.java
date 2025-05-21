@@ -1,9 +1,12 @@
 package br.com.viaapia.analystnotebook.model.action;
 
+import br.com.viaapia.analystnotebook.model.Action;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
-public class ExtrairParteUsandoSeparador {
+@EqualsAndHashCode(callSuper = false)
+public class ExtrairParteUsandoSeparador extends Action {
     public enum CARACTER_SEPARA_PARTE {
         ESPACO("Espaço"),
         TAB("Tabulação"),
