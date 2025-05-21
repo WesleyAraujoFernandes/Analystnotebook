@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import br.com.viaapia.analystnotebook.model.ConditionOld;
+import br.com.viaapia.analystnotebook.model.Condition;
 
 @Repository
-public interface ConditionRepository extends MongoRepository<ConditionOld, String> {
-    List<ConditionOld> findByDescription(String description);
+public interface ConditionRepository extends MongoRepository<Condition, String> {
+    List<Condition> findByDescription(String description);
 }

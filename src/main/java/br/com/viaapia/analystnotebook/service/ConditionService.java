@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import br.com.viaapia.analystnotebook.model.ConditionOld;
+import br.com.viaapia.analystnotebook.model.Condition;
 import br.com.viaapia.analystnotebook.repository.ConditionRepository;
 
 @Service
@@ -15,15 +15,15 @@ public class ConditionService {
         this.conditionRepository = conditionRepository;
     }
 
-    public ConditionOld save(ConditionOld condition) {
+    public Condition save(Condition condition) {
         return conditionRepository.save(condition);
     }
 
-    public void saveAll(List<ConditionOld> conditions) {
+    public void saveAll(List<Condition> conditions) {
         conditionRepository.saveAll(conditions);
     }
 
-    public ConditionOld findById(String id) {
+    public Condition findById(String id) {
         return conditionRepository.findById(id).orElse(null);
     }
 
@@ -31,12 +31,12 @@ public class ConditionService {
         conditionRepository.deleteById(id);
     }
 
-    public List<ConditionOld> findAll() {
+    public List<Condition> findAll() {
         return conditionRepository.findAll();
     }
 
-    public ConditionOld update(String id, ConditionOld condition) {
-        ConditionOld existingCondition = conditionRepository.findById(id).orElse(null);
+    public Condition update(String id, Condition condition) {
+        Condition existingCondition = conditionRepository.findById(id).orElse(null);
         if (existingCondition != null) {
             condition.setId(id);
             condition.setDescription(existingCondition.getDescription());
@@ -45,7 +45,7 @@ public class ConditionService {
         return null;
     }
 
-    public List<ConditionOld> findByDescription(String description) {
+    public List<Condition> findByDescription(String description) {
         return conditionRepository.findByDescription(description);
     }
 }

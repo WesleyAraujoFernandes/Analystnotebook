@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Document("condition")
 @Data
-public class ConditionOld {
+public class Condition {
     @Id
     private String id;
     private String description;

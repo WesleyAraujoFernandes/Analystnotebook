@@ -10,6 +10,6 @@ import lombok.Data;
 public class ConditionApplied {
     @Id
     String id;
-    ConditionOld condition;
+    Condition condition;
     String value;
 }

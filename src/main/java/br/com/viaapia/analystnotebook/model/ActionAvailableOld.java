@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 @Document("action_available")
-public class ActionAvailable {
+public class ActionAvailableOld {
     private String id;
     AlterarUsoMaiusculaMinuscula alterarUsoMaiusculaMinuscula;
 
