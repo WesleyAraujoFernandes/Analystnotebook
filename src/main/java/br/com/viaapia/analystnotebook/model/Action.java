@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 public abstract class Action {
-    private String id;
-    private String name;
-    private List<Condition> conditions;
+    private String id; // Identificador único da ação
+    private String name; // Nome da ação
+    private List<Condition> conditions; // Condições da ação
 }
