@@ -6,6 +6,7 @@ import br.com.viaapia.analystnotebook.model.Condition;
 // Altera o uso de letras maiúsculas e minúsculas
 // Exemplo: "A" -> "a", "a" -> "A"
 public class AlterarUsoMaiusculaMinuscula extends Action {
+
     public enum Type {
         MINUSCULA("MINUSCULA"),
         MAIUSCULA("MAIUSCULA"),
@@ -24,5 +25,5 @@ public class AlterarUsoMaiusculaMinuscula extends Action {
     }
 
     Condition condition;
-    String value;
+    String conditionValue;
 }
