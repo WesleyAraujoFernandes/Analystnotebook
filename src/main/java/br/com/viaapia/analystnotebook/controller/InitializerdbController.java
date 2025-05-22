@@ -9,6 +9,6 @@ public class InitializerdbController {
     @PostMapping("/initializerdb")
     public ResponseEntity<?> initializeDatabase() {
         // Implement your database initialization logic here
-        return ResponseEntity.ok("Database initialized successfully");
+        return ResponseEntity.ok("Database initialized successfully"); 
     }
 }
