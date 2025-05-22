@@ -9,4 +9,5 @@ public abstract class Action {
     private String id; // Identificador único da ação
     private String name; // Nome da ação
     private List<Condition> conditions; // Condições da ação
+
 }
